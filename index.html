@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Museo</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/3d96dc518b.js" crossorigin="anonymous"></script>
@@ -33,8 +34,45 @@
     
     
 </head>
-<body>
-    
+<body class="body">
+     <!--barra de navegación responsiva-->
+     <nav class="navbar navbar-expand-md" style="background-color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#" style="gap: 10px;">
+               
+                <h1 style="margin-bottom: 0;">Museo Limarí</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div id="navmenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#quienes" class="nav-link">Quienes Somos</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <main class="main__principal container-fluid">
+        
+        <div class="row justify-content-center align-items-center main__principal--buttons">
+            
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona sur">Sala Sur</button>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona Principal">Exposición Principal</button>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona norte">Sala Norte</button>
+            </div>
+        </div>
+        
+    </main>
+       
 
 
 
@@ -49,8 +87,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <!--Script personales-->
-<script src="assets/js/smooth.js"></script> //smooth
-<script src="assets/js/script.js"></script> //
-<script src="assets/js/tooltips.js"></script> //tooltips
+<script src="assets/js/smooth.js"></script> <!--SMOOTH-->
+<script src="assets/js/script.js"></script> 
+<script src="assets/js/tooltips.js"></script> <!--TOOLTIPS-->
 </body>
 </html>
