@@ -8,26 +8,8 @@
     padding: 0; /* Elimina cualquier padding que pueda afectar el centrado */
     margin: 0; /* Elimina cualquier margen que pueda afectar el centrado */
     
+    
 }
 
-.main__principal--buttons {
-    width: 100%; /* Aprovecha todo el ancho disponible */
-    max-width: 960px; /* Ajusta esto según el ancho máximo deseado para los botones */
-    display: flex; /* Flexbox para esta fila también */
-    justify-content: center; /* Centra los botones horizontalmente */
-    align-items: center; /* Centra los botones verticalmente */
-    flex-wrap: wrap; /* Permite a los elementos envolverse si no hay espacio suficiente */
-    padding: 20px; /* Espaciado interno para no pegar los botones al borde */
-    box-sizing: border-box; /* Incluye padding en el cálculo del width/height */
-}
 
-/* Asegúrate de que los botones no estén demasiado apretados y tengan un buen tamaño */
-.btn {
-    margin: 10px; /* Añade un margen alrededor de cada botón para separación */
-    padding: 12px 24px; /* Añade padding interno para hacer los botones más grandes y fáciles de clickear */
-    font-size: 16px; /* Ajusta el tamaño de la fuente según la necesidad */
-}
 
-.navbar {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparente para una mejor visibilidad sobre el fondo */
-}

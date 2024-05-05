@@ -34,7 +34,7 @@
     
     
 </head>
-<body class="body">
+<body class="body-page">
      <!--barra de navegación responsiva-->
      <nav class="navbar navbar-expand-md fixed-top" style="background-color: black;">
         <div class="container-fluid">
@@ -45,7 +45,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
-            <div id="navmenu" class="collapse navbar-collapse  ">
+            <div id="navmenu" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li class="nav-item"><a href="#quienes" class="nav-link">Quienes Somos</a></li>
@@ -56,19 +56,26 @@
         </div>
     </nav>
     <br><br><br>
-    <main class="main__principal container-fluid">
+    <main class=" container">
         
-        <div class="row justify-content-center align-items-center main__principal--buttons">
+        <div class="row justify-content-center align-items-center ">
             
-            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona sur">Sala Sur</button>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona Principal">Exposición Principal</button>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona norte">Sala Norte</button>
-            </div>
+            <div class="card mb-3" style="max-width: 1600px;">
+                <div class="row g-0">
+                  <div class="col-md-9">
+                    <img src="assets/img/fondo2.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-3">
+                    <div class="card-body main__principal--buttons">
+                      <h5 class="card-title">Card title</h5>
+                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona sur">Sala Sur</button>
+                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona sur">Sala Sur</button>
+                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir a la zona sur">Sala Sur</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
         </div>
         
     </main>
