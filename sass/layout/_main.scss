@@ -10,6 +10,24 @@
     
     
 }
+.main__salas {
+    position: absolute; /* Posicionamiento relativo para posibles contenidos absolutos */
+    height: 100vh; /* Altura completa de la ventana para asegurar que no sea más grande que la pantalla */
+    display: flex; /* Usa Flexbox para alinear contenido */
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: center; /* Centra contenido verticalmente */
+    padding: 0; /* Elimina cualquier padding que pueda afectar el centrado */
+    margin: 0; /* Elimina cualquier margen que pueda afectar el centrado */
+    
+    
+}
 
 
+  .carrusel--img {
+    margin: auto;
+    padding: 30px;
+    height: 300px; /* Altura deseada de las imágenes */
+    width: 380px; /* Ancho deseado de las imágenes */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+}
 

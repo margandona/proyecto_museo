@@ -6,7 +6,7 @@
 .body {
   margin: 0;
   padding: 0;
-  background-image: url("../../assets/img/fondo.png"); /* Asegúrate de que la ruta está correcta */
+  background-image: url("../../assets/img/museo2.jpg"); /* Asegúrate de que la ruta está correcta */
   background-color: #f4f4f4; /* Color de fondo en caso de que la imagen no cargue */
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen en el contenedor */
@@ -19,6 +19,10 @@
 
 .body {
   font-family: "Cabin", sans-serif;
+}
+
+.navbar {
+  font-family: "Lobster", sans-serif;
 }
 
 /*componentes*/
@@ -51,6 +55,33 @@
   margin: 0; /* Elimina cualquier margen que pueda afectar el centrado */
 }
 
+.main__salas {
+  position: absolute; /* Posicionamiento relativo para posibles contenidos absolutos */
+  height: 100vh; /* Altura completa de la ventana para asegurar que no sea más grande que la pantalla */
+  display: flex; /* Usa Flexbox para alinear contenido */
+  justify-content: center; /* Centra contenido horizontalmente */
+  align-items: center; /* Centra contenido verticalmente */
+  padding: 0; /* Elimina cualquier padding que pueda afectar el centrado */
+  margin: 0; /* Elimina cualquier margen que pueda afectar el centrado */
+}
+
+.carrusel--img {
+  margin: auto;
+  padding: 30px;
+  height: 300px; /* Altura deseada de las imágenes */
+  width: 380px; /* Ancho deseado de las imágenes */
+  -o-object-fit: cover;
+     object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+}
+
 .navbar {
   background: rgba(0, 0, 0, 0.5); /* Semi-transparente para una mejor visibilidad sobre el fondo */
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */
