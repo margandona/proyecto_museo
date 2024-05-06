@@ -1,0 +1,15 @@
+/* Base styles here */ 
+.body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/img/museo2.jpg'); /* Asegúrate de que la ruta está correcta */
+    background-color: $blanco; /* Color de fondo en caso de que la imagen no cargue */
+    background-size: $cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: $center; /* Centra la imagen en el contenedor */
+
+}
+.body-page {
+    margin: 0;
+    padding: 0;
+   
+}

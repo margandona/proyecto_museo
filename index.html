@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Museo</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/3d96dc518b.js" crossorigin="anonymous"></script>
+    
+    <!--fin Font Awesome-->
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Fin Google Fonts-->
+
+    <!-- tipografias -->
+    <!-- 1- Cabin Regular 400-->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet">
+    <!--2- Cabin Bold 700-->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!--3- Lobster Regular 400-->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&family=Lobster&display=swap"
+        rel="stylesheet">
+    <!--Fin Tipografía-->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Fin Boostrap CSS-->
+
+    
+    
+</head>
+<body class="body">
+     <!--barra de navegación responsiva-->
+     <nav class="navbar navbar-expand-md fixed-top" style="background-color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="gap: 10px;">
+               
+                <h1 style="margin-bottom: 0;">Museo Limarí</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div id="navmenu" class="collapse navbar-collapse  ">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="quienes.html" class="nav-link">Quienes Somos</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="main__principal container-fluid" id="inicio">
+        
+        <div class="row justify-content-center align-items-center main__principal--buttons">
+            
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
+                <a href="biblioteca.html" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para ir a la Biblioteca">La Biblioteca</a>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
+                <a href="sala1.html" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para ir a la Exposición Principal">Exposición Principal</a>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12 text-center">
+                <a href="sala2.html" class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para ir a la Exposición de Cerámica Diaguita">Cerámica Diaguita</a>
+            </div>
+            
+        </div>
+        
+        
+    </main>
+       <br><br><br><br><br><br><br><br><br>
+    <footer class="text-center text-white bg-dark px-2 py-2 fixed-bottom" id="contacto">
+        <span class="lobster-regular" id="pie">Museo Limarí</span>
+    </footer>
+
+
+
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<!--jQuerry-->
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!--Script personales-->
+<script src="assets/js/smooth.js"></script> <!--SMOOTH-->
+<script src="assets/js/script.js"></script> 
+<script src="assets/js/tooltips.js"></script> <!--TOOLTIPS-->
+</body>
+</html>

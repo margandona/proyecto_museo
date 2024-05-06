@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Museo</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/3d96dc518b.js" crossorigin="anonymous"></script>
+    
+    <!--fin Font Awesome-->
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Fin Google Fonts-->
+
+    <!-- tipografias -->
+    <!-- 1- Cabin Regular 400-->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet">
+    <!--2- Cabin Bold 700-->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!--3- Lobster Regular 400-->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&family=Lobster&display=swap"
+        rel="stylesheet">
+    <!--Fin Tipografía-->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Fin Boostrap CSS-->
+
+    
+    
+</head>
+<body class="body-page">
+     <!--barra de navegación responsiva-->
+     <!--barra de navegación responsiva-->
+     <nav class="navbar navbar-expand-md fixed-top" style="background-color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="gap: 10px;">
+               
+                <h1 style="margin-bottom: 0;">Museo Limarí</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div id="navmenu" class="collapse navbar-collapse  ">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="quienes.html" class="nav-link">Quienes Somos</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <main class=" container main__principal">
+        
+      <div class="container-fluid h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="card mb-3" style="max-width: 1200px;">
+                <div class="row g-0 align-items-center">
+                    <div class="col-12 position-relative text-center">
+                        <img src="assets/img/fondo2.png" class="img-fluid" alt="...">
+                        <div class="position-absolute top-50 start-50 translate-middle" style="transform: translate(-50%, -50%);">
+                            <!-- Use `flex-column flex-sm-row` to change layout based on screen size -->
+                            <div class="d-flex flex-column flex-md-row justify-content-center gap-2">
+                                <a href="index.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="preciona para regresar al Inicio">Regresar a Inicio</a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ver el video" onclick="openVideoPlayer()">Video Principal</button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ver la imagen" onclick="openImageLink()">Imagen Princpal</button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para ir al recorrido virtual" onclick="openExternalWebsite()">Recorrido Virtual</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+
+        <!-- Modal VIDEO-->
+<div class="modal fade" id="videoPlayerModal" tabindex="-1" aria-labelledby="videoPlayerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoPlayerModalLabel">Video Player</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <video controls width="400">
+                <source src="assets/vid/sonidosDiaguitas.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function openVideoPlayer() {
+      // Mostrar el modal
+      var myModal = new bootstrap.Modal(document.getElementById('videoPlayerModal'));
+      myModal.show();
+    }
+  </script>
+  <!--fin modal viodeo-->
+        <!-- Modal QR-->
+<div class="modal fade" id="imageLinkModal" tabindex="-1" aria-labelledby="imageLinkModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageLinkModalLabel">Image Link</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <a href="https://www.example.com" target="_blank"><img src="assets/img/man.JPG" alt="Sample Image"></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <script>
+    function openImageLink() {
+      // Mostrar el modal
+      var myModal = new bootstrap.Modal(document.getElementById('imageLinkModal'));
+      myModal.show();
+    }
+  </script>
+
+<!--FIN MODAL QR-->
+
+<!-- Modal RECORRIDO-->
+<div class="modal fade" id="externalWebsiteModal" tabindex="-1" aria-labelledby="externalWebsiteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="externalWebsiteModalLabel">Museo del Limarí</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-center text-center"> <!-- Aquí agregamos la clase text-center -->
+          <img src="assets/img/QR1.png" style="width: 225px; height: 300px; border: none;">
+        </div>
+        <div class="modal-footer">
+            <h4 class="text-left">Captura el QR o haz clic en Ir al Sitio:</h4>
+            <a href="https://www.museolimari.gob.cl/multimedia/museo-del-limari" class="btn btn-secondary" target="_blank" style="color: white;">Ir al Sitio</a>
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    function openExternalWebsite() {
+        // Mostrar el modal
+        var myModal = new bootstrap.Modal(document.getElementById('externalWebsiteModal'));
+        myModal.show();
+    }
+</script>
+
+  
+    </main>
+<br><br>
+    
+    <footer class="text-center text-white bg-dark px-2 py-2 fixed-bottom" id="contacto">
+        <span class="lobster-regular" id="pie">Museo Limarí</span>
+    </footer>
+       
+
+
+
+
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<!--jQuerry-->
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!--Script personales-->
+<script src="assets/js/smooth.js"></script> <!--SMOOTH-->
+<script src="assets/js/script.js"></script> 
+<script src="assets/js/tooltips.js"></script> <!--TOOLTIPS-->
+<script src="assets/js/video.js"></script>
+</body>
+</html>
